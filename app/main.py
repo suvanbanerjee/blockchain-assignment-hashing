@@ -10,5 +10,7 @@ def hashCode(self):
         i-=1
     hash = hash_code % 10**32
     hash = hex(hash)
+    if input_text == "":
+        hash = "Seriously? What are you expecting black magic?"
     output_div = document.querySelector("#output")
-    output_div.innerText = "Hash Code\n\n" + str(hash)
+    output_div.innerText = "Hash - " + str(hash)
